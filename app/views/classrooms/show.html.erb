@@ -1,18 +1,11 @@
 Classroom Info
 <p>
-<%= @classroom.course_name %>
-<%= @classroom.semester %>
+<%= @classroom.course_name %> #dislapy the course name 
+<%= @classroom.semester %> 
 </p>
 
 We now want to call out the oldest student in the class:
 <ul>
-  <li>
-    Name: <%= @student.name %>
-  </li>
-  <li>
-    Birthday: <%= @student.birthday.strftime("%m/%d/%Y")  %>
-  </li>
-  <li>
-    Hometown: <%= @student.hometown.capitalize %>
-  </li>
+<%= render 'students/student' %> # this does all the heavy lifing (go into students then look for a file called student)
 </ul>
+  
