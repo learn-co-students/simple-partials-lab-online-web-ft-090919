@@ -1,0 +1,17 @@
+#this is what the file is looking for telling it what do show and folling the dry princeapal 
+
+<%= form_for @student do |f|%> 
+<p>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+</p>
+<p>
+  <%= f.label :hometown %>
+  <%= f.text_field :hometown %>
+</p>
+<p>
+  <%= f.label :birthday %>
+  <%= f.date_field :birthday %>
+</p>
+  <%= f.submit %>
+  <% end %>
